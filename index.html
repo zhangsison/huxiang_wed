@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<title>呼响共享充电宝</title>
+<style type="text/css">
+	
+html,body {
+  padding:0;
+  margin:0;
+	background:#fafafa;
+	text-align:center;
+}
+
+body {
+  padding-top:4em;
+}
+
+h1 {
+  margin:3rem;
+  font-family:sans-serif;
+  color:#666;
+}
+
+a {
+
+	position:relative;
+	border:0;
+	margin:0;
+	padding:0;
+	cursor:pointer;
+	font-size:1rem;
+	font-weight:bold;
+	color:rgba(0,0,0,0);
+	background:transparent;
+	border-radius:.25rem;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+}
+
+a,
+a:after,
+a:before {
+	padding:.6875rem 2rem;
+	-webkit-transition:-webkit-transform 0.75s,background-color .125s;
+	-moz-transition:-moz-transform 0.75s,background-color .125s;
+	-ms-transition:-ms-transform 0.75s,background-color .125s;
+	transition:transform 0.75s,background-color .125s;
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style:preserve-3d;
+	-ms-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+}
+
+a:after,
+a:before {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	border-radius:.25rem;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	backface-visibility:hidden;
+
+}
+
+a:before {
+	z-index:2;
+	color:#fff;
+	background-color:#3e87ec;
+	content:attr(data-label);
+}
+
+a:after {
+	z-index:1;
+	background-color:#999;
+	background-repeat:no-repeat;
+	background-position:center center;
+	
+	-webkit-transform:rotateX(180deg);
+	-moz-transform:rotateX(180deg);
+	-ms-transform:rotateX(180deg);
+	transform:rotateX(180deg);
+	content:'';
+}
+
+a:active:before {
+	background-color:#3571c8;
+}
+
+a.loading {
+	-webkit-transform:rotateX(180deg);
+	-moz-transform:rotateX(180deg);
+	-ms-transform:rotateX(180deg);
+	transform:rotateX(180deg);
+}
+</style>
+	</head>
+	<body>
+<h1>3D Flip a</h1>
+<a data-label="do it!"  href="html/map/index.html">do it!</a> 
+    <h1>3D Flip a</h1>
+<a data-label="do it!"  href="html/account/index.html">do it!</a>   
+    <h1>3D Flip a</h1>
+<a data-label="do it!"  href="html/others/index.html">do it!</a>  
+	</body>
+</html>
